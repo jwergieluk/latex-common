@@ -1,16 +1,17 @@
 
 % Annotation
 \newcommand{\key}[1]{\textsl{#1}\index{#1}}
-\newcommand{\todo}{{\marginpar{\centering{$\bigstar$}}}}
+%\newcommand{\todo}{{\marginpar{\centering{$\bigstar$}}}}
 \newcommand{\Q}{{\textbf{Q: }\index{Questions}}}
 \newcommand{\kw}{\emph{Keywords: }}
 \newcommand{\src}{\emph{Source: }}
+\renewcommand{\iff}{\Leftrightarrow}
 
 % General
-\newcommand{\R}{\mathbb{R}}\newcommand{\Rn}{\mathbb{R}^n}
-\newcommand{\Rg}{\mathbb{R}_{>0}}\newcommand{\Rgeq}{\mathbb{R}_{\geq 0}}
+\newcommand{\R}{\mathbb{R}}%\newcommand{\Rn}{\mathbb{R}^n}
+%\newcommand{\Rg}{\mathbb{R}_{>0}}\newcommand{\Rgeq}{\mathbb{R}_{\geq 0}}
 \newcommand{\C}{\mathbb{C}}
-\newcommand{\dt}{\mathrm{d}t}
+%\newcommand{\dt}{\mathrm{d}t}
 \newcommand{\N}{\mathbb{N}}
 
 %Stochastics
@@ -24,7 +25,8 @@
 \DeclareMathOperator{\corr}{corr}
 \DeclareMathOperator{\var}{var}\DeclareMathOperator{\Var}{Var}
 
-\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}\newcommand{\pdd}[2]{\frac{\partial^2 #1}{\partial {#2}^2}}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pdd}[2]{\frac{\partial^2 #1}{\partial {#2}^2}}
 \newcommand{\cfam}[2]{({#1}_{#2})_{#2 \geq 0}}
 \newcommand{\dfam}[2]{({#1}_{#2})_{#2 \in \mathbb N}}
 

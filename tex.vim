@@ -9,15 +9,19 @@ call IMAP('CP', '\mathbb{P}^{<++>}\left[<++> \;\middle\vert\; \mathcal{F}_{<++>}
 call IMAP('CCF', '\mathbb{E}\left[e^{<++>} \;\middle\vert\; \mathcal{F}_{<++>}\right]<++>', 'tex')
 
 " frame template for beamer class
-call IMAP('SFR', "\\begin{frame}\<CR>\\frametitle{<++>}\<CR><++>\<CR>\\end{frame}", 'tex')
+call IMAP('SFR', "\\begin{frame}\<CR>{<++>}\<CR><++>\<CR>\\end{frame}", 'tex')
 call IMAP('SPR', "\\begin{proof}\<CR><++>\<CR>\\end{proof}", 'tex')
 call IMAP('SBL', "\\begin{block}{<++>}\<CR><++>\<CR>\\end{block}", 'tex')
+
+" Additional environments
+call IMAP('THM', "\\begin{theorem}\<CR><++>\<CR>\\end{theorem}", 'tex')
+call IMAP('DEF', "\\begin{definition}\<CR><++>\<CR>\\end{definition}", 'tex')
 
 call IMAP('DOT', '\langle <++> \rangle<++>', 'tex')
 call IMAP('MOP', '\operatorname{<++>}<++>', 'tex')
 
 " Norm
-call IMAP('||', '\|<++>\|<++>', 'tex')
+call IMAP('||', '\left\|<++>\right\|<++>', 'tex')
 
 
 call IMAP('`w', '\omega', 'tex')
