@@ -20,9 +20,15 @@ call IMAP('DEF', "\\begin{definition}\<CR><++>\<CR>\\end{definition}", 'tex')
 call IMAP('DOT', '\langle <++> \rangle<++>', 'tex')
 call IMAP('MOP', '\operatorname{<++>}<++>', 'tex')
 
+" Equations
+call IMAP('EAL', "\\begin{align*}\<CR><++>\<CR>\\end{align*}", 'tex')
+call IMAP('EEA', "\\begin{align*}\<CR><++>\<CR>\\end{align*}", 'tex')
+call IMAP('EEQ', "\\begin{equation*}\<CR><++>\<CR>\\end{equation*}", 'tex')
+call IMAP('EST', "\\begin{equation}\<CR>\\begin{split}\<CR><++>\<CR>\\end{split}\<CR>\\label{<++>}\<CR>\\end{equation}", 'tex')
+
 " Norm
 call IMAP('||', '\left\|<++>\right\|<++>', 'tex')
-
+call IMAP('EVAL', '\left.<++>\right|_{<++>}^{<++>} <++>', 'tex')
 
 call IMAP('`w', '\omega', 'tex')
 
