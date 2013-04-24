@@ -1,13 +1,14 @@
 
 %%% packages
 
-\usepackage{graphicx, color, amsfonts, amssymb, amsmath, latexsym, MnSymbol}   % lipsum
+\usepackage[final]{graphicx}   %% display figures in draft mode
+\usepackage{color, amsfonts, amssymb, amsmath, latexsym, MnSymbol}   % lipsum
 \usepackage{listings}\lstset{basicstyle=\ttfamily, breaklines=true}
 \makeindex
 
 \usepackage{hyperref}
 \hypersetup{colorlinks=true, linkcolor=black, bookmarksopenlevel={2}, bookmarksopen = true}
-\hypersetup{pdfauthor={\theauthor}, pdftitle={\thetitle}}
+\hypersetup{pdfauthor={\theauthor}, pdftitle={\thetitle}}   %%  This is *memoir* specific
 
 
 \usepackage[obeyDraft,backgroundcolor=white]{todonotes}

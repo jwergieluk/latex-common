@@ -1,18 +1,29 @@
-
+% Julian Wergieluk (c) 2012, Some rights reserved
 
 \usepackage{beamerthemesplit}
 \beamertemplatenavigationsymbolsempty
-%\usetheme{Copenhagen}
+\usetheme{Luebeck}
 %\usepackage{beamerthemedefault}
 
 
 \useinnertheme{rectangles}
 
-\setbeamertemplate{footline}[frame number]
 \setbeamertemplate{headline}[text line]
 
 
-% Colors taken from http://deletionpedia.dbatley.com/w/index.php?title=Zenburn
+%%% Footline
+% http://www.r-bloggers.com/create-your-own-beamer-template/ 
+\newcommand{\footlineContent}{%
+\insertsection \hspace*{5mm} \insertsubsection % The left end of the footline
+\hfill
+\insertframenumber / \inserttotalframenumber} % And the right end
+
+\setbeamertemplate{footline}{%
+\usebeamerfont{structure}
+\begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex]{titlelike}%
+\hspace*{4mm} \footlineContent \hspace{4mm}
+\end{beamercolorbox}}
+
 
 
 
@@ -23,10 +34,13 @@
 \definecolor{ItemFg}{HTML}{C04848}
 
 \setbeamercolor{normal text}{fg=NormalFg, bg=NormalBg}
+%\setbeamercolor{titlelike}{fg=NormalBg, bg=TitleBg}
 \setbeamercolor{titlelike}{fg=TitleFg, bg=TitleBg}
 \setbeamercolor{item}{fg=ItemFg}
 \setbeamercolor{structure}{fg=TitleFg,bg=TitleBg}
 
 \setbeamercolor{title page}{bg=TitleBg}
 \setbeamercolor{title}{fg=TitleFg, bg=NormalBg}
+
+%\setbeamercolor{primary palette}{fg=NormalFg, bg=NormalBg}
 

@@ -15,9 +15,10 @@ call IMAP('SBL', "\\begin{block}{<++>}\<CR><++>\<CR>\\end{block}", 'tex')
 
 " Additional environments
 call IMAP('THM', "\\begin{theorem}\<CR><++>\<CR>\\end{theorem}", 'tex')
+call IMAP('PRF', "\\begin{proof}\<CR><++>\<CR>\\end{proof}", 'tex')
 call IMAP('DEF', "\\begin{definition}\<CR><++>\<CR>\\end{definition}", 'tex')
 
-call IMAP('DOT', '\langle <++> \rangle<++>', 'tex')
+call IMAP('DOT', '\left\langle <++> \right\rangle<++>', 'tex')
 call IMAP('MOP', '\operatorname{<++>}<++>', 'tex')
 
 " Equations
@@ -31,6 +32,7 @@ call IMAP('||', '\left\|<++>\right\|<++>', 'tex')
 call IMAP('EVAL', '\left.<++>\right|_{<++>}^{<++>} <++>', 'tex')
 
 call IMAP('`w', '\omega', 'tex')
+call IMAP('`f', '\phi', 'tex')
 
 
 " spelling
@@ -41,6 +43,7 @@ call IMAP('Cadlag', 'C\`adl\`ag', 'tex')
 call IMAP('Caglad', 'C\`agl\`ad', 'tex')
 
 call IMAP('Ito', 'It\^o', 'tex')
+call IMAP('Levy', "L\\\'evy", 'tex')
 
 call IMAP('BB', 'Brownsche Bewegung', 'tex')
 
