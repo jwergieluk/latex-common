@@ -10,13 +10,18 @@ call IMAP('CCF', '\mathbb{E}\left[e^{<++>} \;\middle\vert\; \mathcal{F}_{<++>}\r
 
 " frame template for beamer class
 call IMAP('SFR', "\\begin{frame}\<CR>{<++>}\<CR><++>\<CR>\\end{frame}", 'tex')
-call IMAP('SPR', "\\begin{proof}\<CR><++>\<CR>\\end{proof}", 'tex')
 call IMAP('SBL', "\\begin{block}{<++>}\<CR><++>\<CR>\\end{block}", 'tex')
 
 " Additional environments
-call IMAP('THM', "\\begin{theorem}\<CR><++>\<CR>\\end{theorem}", 'tex')
-call IMAP('PRF', "\\begin{proof}\<CR><++>\<CR>\\end{proof}", 'tex')
-call IMAP('DEF', "\\begin{definition}\<CR><++>\<CR>\\end{definition}", 'tex')
+call IMAP('THEOREM', "\\begin{theorem}\<CR><++>\<CR>\\end{theorem}", 'tex')
+call IMAP('LEMMA', "\\begin{lemma}\<CR><++>\<CR>\\end{lemma}", 'tex')
+call IMAP('COROLLARY', "\\begin{corollary}\<CR><++>\<CR>\\end{corollary}", 'tex')
+call IMAP('PROPOSITION', "\\begin{proposition}\<CR><++>\<CR>\\end{proposition}", 'tex')
+call IMAP('PROOF', "\\begin{proof}\<CR><++>\<CR>\\end{proof}", 'tex')
+call IMAP('DEFINITION', "\\begin{definition}\<CR><++>\<CR>\\end{definition}", 'tex')
+call IMAP('REMARK', "\\begin{remark}\<CR><++>\<CR>\\end{remark}", 'tex')
+call IMAP('ASSUMPTION', "\\begin{assumption}\<CR><++>\<CR>\\end{assumption}", 'tex')
+call IMAP('EXAMPLE', "\\begin{example}\<CR><++>\<CR>\\end{example}", 'tex')
 
 call IMAP('DOT', '\left\langle <++> \right\rangle<++>', 'tex')
 call IMAP('MOP', '\operatorname{<++>}<++>', 'tex')
@@ -46,5 +51,13 @@ call IMAP('Ito', 'It\^o', 'tex')
 call IMAP('Levy', "L\\\'evy", 'tex')
 
 call IMAP('BB', 'Brownsche Bewegung', 'tex')
+
+" Tweaks 
+call IMAP(',,,', ',\dots ,', 'tex')
+
+
+
+
+
 
 " call IMAP('', '', 'tex')

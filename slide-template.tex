@@ -1,0 +1,35 @@
+\documentclass{beamer}
+%\documentclass{article}
+%\usepackage{beamerarticle}
+
+
+\author{Julian Wergieluk}
+\institute[TUC]{TU Chemnitz}
+\title{}
+
+\input{../latex-common/commands}
+\input{../latex-common/beamer-preamble}
+\input{../latex-common/beamer-cappuccino}
+
+\usepackage[english]{babel}
+
+\usepackage[url=false, citestyle=authoryear, backend=biber]{biblatex}
+\addbibresource{../latex-common/library.bib}
+\AtEveryBibitem{
+    \clearlist{isbn}
+}
+
+\begin{document}
+
+{
+    \setbeamertemplate{footline}{} 
+    \begin{frame}\titlepage\end{frame}
+}
+\addtocounter{framenumber}{-1}
+
+
+
+\end{document}
+
+
+
