@@ -22,6 +22,7 @@ call IMAP('DEF', "\\begin{definition}\<CR><++>\<CR>\\end{definition}", 'tex')
 call IMAP('REM', "\\begin{remark}\<CR><++>\<CR>\\end{remark}", 'tex')
 call IMAP('ASS', "\\begin{assumption}\<CR><++>\<CR>\\end{assumption}", 'tex')
 call IMAP('EXAMPLE', "\\begin{example}\<CR><++>\<CR>\\end{example}", 'tex')
+call IMAP('PROBLEM', "\\begin{problem}\<CR><++>\<CR>\\end{problem}", 'tex')
 
 call IMAP('DOT', '\left\langle <++> \right\rangle<++>', 'tex')
 call IMAP('MOP', '\operatorname{<++>}<++>', 'tex')
