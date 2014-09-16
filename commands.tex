@@ -1,26 +1,16 @@
-
 % Annotation
 \newcommand{\key}[1]{\textsl{#1}\index{#1}}
-\newcommand{\starit}{$\bigstar$}
-\newcommand{\Q}{{\textbf{Q: }\index{Questions}}}
-\newcommand{\kw}{\emph{Keywords: }}
-\newcommand{\src}{\emph{Source: }}
-\renewcommand{\iff}{\Leftrightarrow}
-
-% problem collection commands
-%\newcommand{\problem}[1]{\paragraph{#1}}
-%\newcommand{\solution}{\paragraph*{Lösung.}}
 
 % General
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\N}{\mathbb{N}}
-\newcommand{\ind}{\,1}
+\newcommand{\ind}{1}
 
 %Stochastics
-\newcommand{\F}{\mathcal{F}}
 \newcommand{\E}{\mathbb{E}}
-\newcommand{\as}{\textrm{ a.s. }}
+\newcommand\upmodels{\protect\mathpalette{\protect\independenT}{\perp}}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
 
 % Logic
 \newcommand{\impl}{\Rightarrow}
@@ -28,14 +18,9 @@
 \DeclareMathOperator{\corr}{corr}
 \DeclareMathOperator{\var}{var}\DeclareMathOperator{\Var}{Var}
 
-\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
-\newcommand{\pdd}[2]{\frac{\partial^2 #1}{\partial {#2}^2}}
-\newcommand{\cfam}[2]{({#1}_{#2})_{#2 \geq 0}}
-\newcommand{\dfam}[2]{({#1}_{#2})_{#2 \in \mathbb N}}
-
-
+\newcommand{\cond}{\;\middle\vert\;}
 \newcommand{\vb}{\;\middle\vert\;}
-
+\renewcommand{\div}{\mathop\backslash}
 
 \newcommand{\bA}{\mathbb A}\newcommand{\cA}{\mathcal A}\newcommand{\fA}{\mathfrak A}\newcommand{\bfA}{\mathbf A}
 \newcommand{\bB}{\mathbb B}\newcommand{\cB}{\mathcal B}\newcommand{\fB}{\mathfrak B}\newcommand{\bfB}{\mathbf B}
